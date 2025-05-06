@@ -1,7 +1,7 @@
 import { FaWhatsapp } from "react-icons/fa";
 
 export default function Contato() {
-  const numeroWhatsApp = "5574981166046"; // Coloque aqui o número com DDI (55 para Brasil) e DDD
+  const numeroWhatsApp = "557481166046"; // Coloque aqui o número com DDI (55 para Brasil) e DDD
 
   const linkWhatsApp = `https://wa.me/${numeroWhatsApp}`;
 
