@@ -2,6 +2,7 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
+    justify-content: center; /* Centraliza os botões */
   }
   
   .botao-whatsapp,
@@ -9,23 +10,51 @@
     display: flex;
     align-items: center;
     gap: 8px;
-    padding: 10px 16px;
+    padding: 8px 12px; /* Botões menores */
     text-decoration: none;
-    color: #f0f0f0;
+    color: #f0f0f0; /* Cor inicial do texto e ícone */
     background-color: transparent;
     border: 1px solid #f0f0f0;
     border-radius: 6px;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s; /* Transição suave */
+    font-size: 0.9rem; /* Tamanho de fonte menor para os botões */
   }
   
   .botao-whatsapp:hover,
   .botao-instagram:hover {
     background-color: #f0f0f0;
-    color: #000;
+    color: #000; /* Cor no hover, afeta o texto e o ícone */
   }
   
   .icone-contato {
-    font-size: 1.2rem;
-    color: #f0f0f0;
+    font-size: 1.2rem; /* Tamanho do ícone */
+    color: currentColor; /* O ícone herda a cor do texto no botão */
+    transition: color 0.2s; /* Transição suave para o ícone também */
+  }
+  
+  /* Responsividade - Para telas menores, ajusta o tamanho dos botões */
+  @media (max-width: 768px) {
+    .botao-whatsapp,
+    .botao-instagram {
+      padding: 6px 10px; /* Botões ainda menores em telas pequenas */
+      font-size: 0.8rem; /* Texto menor */
+    }
+  
+    .icone-contato {
+      font-size: 1rem; /* Ícones menores em telas pequenas */
+    }
+  }
+  
+  /* Responsividade extra - Para telas muito pequenas (mobile portrait) */
+  @media (max-width: 480px) {
+    .botao-whatsapp,
+    .botao-instagram {
+      padding: 6px 8px; /* Reduz ainda mais o padding */
+      font-size: 0.7rem; /* Tamanho de texto ainda menor */
+    }
+  
+    .icone-contato {
+      font-size: 0.9rem; /* Ícone ainda menor */
+    }
   }
   
