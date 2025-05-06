@@ -1,0 +1,31 @@
+.contato {
+    display: flex;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  
+  .botao-whatsapp,
+  .botao-instagram {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    text-decoration: none;
+    color: #f0f0f0;
+    background-color: transparent;
+    border: 1px solid #f0f0f0;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+  }
+  
+  .botao-whatsapp:hover,
+  .botao-instagram:hover {
+    background-color: #f0f0f0;
+    color: #000;
+  }
+  
+  .icone-contato {
+    font-size: 1.2rem;
+    color: #f0f0f0;
+  }
+  
