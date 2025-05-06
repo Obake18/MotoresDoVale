@@ -6,6 +6,9 @@ export default function Home() {
       <h1>
         Motores do Vale
       </h1>
+      <div>
+        
+      </div>
     </div>
     <TextList/>
    </div>
