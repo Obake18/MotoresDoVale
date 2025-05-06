@@ -1,8 +1,13 @@
+import TextList from "./componentes/textos";
 export default function Home() {
   return (
-    <main>
-      <h1>Olá, Next.js!</h1>
-      <p>Seu projeto está pronto para começar.</p>
-    </main>
+   <div className="titulo">
+    <div>
+      <h1>
+        Motores do Vale
+      </h1>
+    </div>
+    <TextList/>
+   </div>
   );
 }
