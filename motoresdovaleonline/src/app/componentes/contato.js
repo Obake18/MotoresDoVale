@@ -3,7 +3,7 @@ import { FaWhatsapp, FaInstagram } from "react-icons/fa";
 export default function Contato() {
   const numeroWhatsApp = "5574981166016";
   const linkWhatsApp = `https://wa.me/${numeroWhatsApp}`;
-  const linkInstagram = "https://www.instagram.com/motoresdovaleof/"; // Substitua pelo seu @
+  const linkInstagram = "https://www.instagram.com/motoresdovaleof/";
 
   return (
     <div className="contato">
