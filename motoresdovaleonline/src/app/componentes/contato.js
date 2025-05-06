@@ -14,7 +14,7 @@ export default function Contato() {
 
       <a href={linkInstagram} target="_blank" rel="noopener noreferrer" className="botao-instagram">
         <FaInstagram className="icone-contato" />
-        <span>Chame a empresa no Instagram</span>
+        <span>Siga nosso Instagram</span>
       </a>
     </div>
   );
