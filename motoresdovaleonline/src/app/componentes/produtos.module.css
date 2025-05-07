@@ -1,0 +1,47 @@
+.container {
+    display: flex;
+    justify-content: space-around;
+    gap: 2rem;
+    padding: 2rem;
+  }
+  
+  .listaContainer {
+    height: 400px;
+    overflow: hidden;
+    width: 220px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fafafa;
+  }
+  
+  .listaAnimada {
+    display: flex;
+    flex-direction: column;
+    animation: scrollVertical 10s linear infinite;
+  }
+  
+  @keyframes scrollVertical {
+    0% {
+      transform: translateY(0%);
+    }
+    100% {
+      transform: translateY(-50%);
+    }
+  }
+  
+  .card {
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .card p {
+    margin-top: 0.5rem;
+    font-size: 0.95rem;
+    color: #333;
+  }
+  
+  .imagem {
+    border-radius: 4px;
+    object-fit: cover;
+  }
+  

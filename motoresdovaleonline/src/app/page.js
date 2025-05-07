@@ -1,6 +1,7 @@
 import TextList from "./componentes/textos";
 import Contato from "./componentes/contato";
 import styles from "./home.module.css";
+import Produtos from "./componentes/produtos";
 export default function Home() {
   return (
     <>
@@ -11,7 +12,7 @@ export default function Home() {
       </div>
 
       </div>
-
+        <Produtos/>
       <div>
         
         <TextList />
