@@ -4,6 +4,7 @@ import styles from "./home.module.css";
 import Produtos from "./componentes/produtos";
 import Image from "next/image";
 import Logo from "./componentes/logo";
+import Info from "./componentes/info";
 export default function Home() {
   return (
     <>
@@ -21,6 +22,7 @@ export default function Home() {
         
         <TextList />
       </div>
+      <Info />
     </>
   );
 }
