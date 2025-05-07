@@ -1,9 +1,10 @@
 .container {
   display: flex;
   justify-content: space-between;
-  padding: 2rem 1rem; /* menos espaço lateral */
+  padding: 2rem 1rem;
   width: 100%;
-  gap: 1rem; /* menor espaço entre colunas */
+  gap: 1rem;
+  flex-wrap: wrap; /* permite quebra para dispositivos menores */
 }
 
 .listaContainer {
@@ -12,6 +13,7 @@
   width: 250px;
   border-radius: 12px;
   background: #fdfdfd;
+  flex-shrink: 0;
 }
 
 .listaAnimada {
@@ -69,10 +71,12 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  flex: 1;
+  min-width: 280px;
 }
 
 .infoTitulo {
-  font-size: 2rem; /* título maior */
+  font-size: 2rem;
   margin-bottom: 1.25rem;
   color: #2a2a2a;
 }
@@ -80,7 +84,7 @@
 .infoTexto {
   font-size: 1.05rem;
   color: #444;
-  margin-bottom: 2rem; /* mais espaço até o mapa */
+  margin-bottom: 2rem;
   line-height: 1.6;
 }
 
@@ -88,5 +92,47 @@
   width: 100%;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.5rem;
+    gap: 2rem;
+  }
+
+  .listaContainer {
+    width: 90%;
+    max-width: 300px;
+    height: 300px;
+  }
+
+  .infoContainer {
+    max-width: 90%;
+  }
+
+  .infoTitulo {
+    font-size: 1.8rem;
+  }
+
+  .infoTexto {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .infoTitulo {
+    font-size: 1.5rem;
+  }
+
+  .infoTexto {
+    font-size: 0.95rem;
+  }
+
+  .card p {
+    font-size: 0.95rem;
+  }
 }

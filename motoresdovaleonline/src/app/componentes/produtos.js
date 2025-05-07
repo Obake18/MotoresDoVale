@@ -8,6 +8,8 @@ const listaEsquerda = [
   { id: 1, nome: 'Motosserras', imagem: '/imagens/produtos/motosserra.png' },
   { id: 2, nome: 'Roçadeiras', imagem: '/imagens/produtos/rocadeira.png' },
   { id: 3, nome: 'Pulverizadores', imagem: '/imagens/produtos/pulv.png' },
+  { id: 4, nome: 'Inversor de Solda', imageem: '/imagens/produtos/inversolda.png'
+  }
 ];
 
 const listaDireita = [

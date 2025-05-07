@@ -1,8 +1,16 @@
 {
-    "mensagens": [
-      "Rebobinamento de motores elétricos.",
-      "Manutenção de máquinas e motores.",
-      "Peças e serviços."
-    ]
-  }
-  
+  "mensagens": [
+    {
+      "texto": "Rebobinamento de motores elétricos.",
+      "imagem": "/imagens/cards/rebobinamento.jpg"
+    },
+    {
+      "texto": "Manutenção de máquinas e motores.",
+      "imagem": "/imagens/cards/manutencao.jpg"
+    },
+    {
+      "texto": "Peças e serviços.",
+      "imagem": "/imagens/cards/pecas.jpg"
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+.logoContainer {
+    background-color: #fff;
+    padding: 1rem;
+    border-radius: 12px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .logo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    transition: transform 0.5s ease;
+  }
+  
+  .logoContainer:hover .logo {
+    animation: girar 2s linear infinite;
+  }
+  
+  @keyframes girar {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
