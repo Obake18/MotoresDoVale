@@ -4,7 +4,7 @@
   padding: 2rem 1rem;
   width: 100%;
   gap: 1rem;
-  flex-wrap: wrap; /* permite quebra para dispositivos menores */
+  flex-wrap: wrap;
 }
 
 .listaContainer {
@@ -134,5 +134,33 @@
 
   .card p {
     font-size: 0.95rem;
+  }
+}
+
+/* 🌙 Modo escuro */
+@media (prefers-color-scheme: dark) {
+  .listaContainer {
+    background: #1a1a1a;
+  }
+
+  .card {
+    background-color: #1e1e1e;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.05);
+  }
+
+  .card p {
+    color: #e0e0e0;
+  }
+
+  .infoTitulo {
+    color: #f0f0f0;
+  }
+
+  .infoTexto {
+    color: #cccccc;
+  }
+
+  .mapaContainer {
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.05);
   }
 }
