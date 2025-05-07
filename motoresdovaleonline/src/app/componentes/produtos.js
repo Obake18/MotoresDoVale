@@ -11,9 +11,9 @@ const listaEsquerda = [
 ];
 
 const listaDireita = [
-  { id: 4, nome: 'Motores elétricos', imagem: '/imagens/trator1.jpg' },
-  { id: 5, nome: 'Trator Agrícola 2', imagem: '/imagens/trator2.jpg' },
-  { id: 6, nome: 'Trator Agrícola 3', imagem: '/imagens/trator3.jpg' },
+  { id: 4, nome: 'Motores elétricos', imagem: '/imagens/produtos/motor-ele.png' },
+  { id: 5, nome: 'Geradores', imagem: '/imagens/produtos/gerador.png' },
+  { id: 6, nome: 'Forrageira', imagem: '/imagens/produtos/forrageira.png' },
 ];
 
 function ListaAnimada({ itens }) {
