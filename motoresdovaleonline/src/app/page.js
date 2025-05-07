@@ -9,17 +9,19 @@ export default function Home() {
   return (
     <>
       <div className="titulo">
-      <div className={styles.topo}>
-        <Logo/>
-        <h1 className={styles.titulo}>Motores do Vale</h1>
+        <div className={styles.topo}>
+          <div className={styles.logoTitulo}>
+            <Logo />
+            <h1 className={styles.titulo}>Motores do Vale</h1>
+          </div>
+          <Contato />
+        </div>
 
-        <Contato />
-      </div>
 
       </div>
-        <Produtos/>
+      <Produtos />
       <div>
-        
+
         <TextList />
       </div>
       <Info />

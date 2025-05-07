@@ -1,31 +1,42 @@
 .topo {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  justify-content: space-between; /* Distribui logo, título e contatos */
   background-color: #303030;
   padding: 16px 24px;
   border-radius: 8px;
-  margin-bottom: 20px;
-  flex-wrap: wrap; /* Permite quebra em telas pequenas */
+  margin-bottom: 15px;
+  flex-wrap: wrap;
   gap: 0.5rem;
+}
+
+/* Novo wrapper para logo + título */
+.logoTitulo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 .titulo {
   color: white;
   font-size: 2rem;
   font-weight: bold;
-  /* Remover o margin-right fixo para responsividade */
 }
 
-/* Ajuste opcional para telas menores */
 @media (max-width: 768px) {
   .topo {
     flex-direction: column;
     align-items: flex-start;
   }
 
+  .logoTitulo {
+    flex-direction: row;
+    align-items: center;
+  }
+
   .titulo {
     font-size: 1.5rem;
   }
 }
+
 
