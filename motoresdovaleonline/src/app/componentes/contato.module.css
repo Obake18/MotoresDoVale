@@ -2,7 +2,8 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
-    justify-content: center; /* Centraliza os botões */
+    justify-content: flex-end;
+  margin-left: auto;
   }
   
   .botao-whatsapp,

@@ -2,6 +2,7 @@ import TextList from "./componentes/textos";
 import Contato from "./componentes/contato";
 import styles from "./home.module.css";
 import Produtos from "./componentes/produtos";
+import Image from "next/image";
 import Logo from "./componentes/logo";
 export default function Home() {
   return (
